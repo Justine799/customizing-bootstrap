@@ -2,27 +2,47 @@
 // This is the file you will want to update to customize your page.
 
 // Import Google fonts here
-
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro:wght@300&display=swap');
 
 // Include any default variable overrides here (colors, font sizes, font family, etc..)
 
-
+$theme-colors: (
+  "primary":    #A04ADD,
+  "secondary":  #3B53C7,
+  "success":    #A4D882,
+  "info":       #59C1EF,
+  "warning":    #FFF689,
+  "danger":     #E5446D,
+  "light":      #f2f2f2,
+  "dark":       #181853
+);
 
 // Adjust nav link hover color here
+
+
 
 
 
 // Typography
 // Change font family for base text
 
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+.navbar-brand {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+}
 
 // Change font family for headings
-
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    }    
 
 // Change font sizes for h1-h6 using values in assignment
-
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
