@@ -5,21 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro:wght@300&display=swap');
 
 // Include any default variable overrides here (colors, font sizes, font family, etc..)
-
-$theme-colors: (
-  "primary":    #A04ADD,
-  "secondary":  #3B53C7,
-  "success":    #A4D882,
-  "info":       #59C1EF,
-  "warning":    #FFF689,
-  "danger":     #E5446D,
-  "light":      #f2f2f2,
-  "dark":       #181853
-);
+$primary: #A04ADD;
+$secondary: #3B53C7;
+$success: #A4D882;
+$info: #59C1EF;
+$warning: #FFF689;
+$danger: #E5446D;
+$light: #f2f2f2;
+$dark: #181853;
 
 // Adjust nav link hover color here
-
-
+$navbar-dark-hover-color: $primary;
 
 
 
@@ -31,22 +27,50 @@ p {
     font-weight: 400;
 }
 
-.navbar-brand {
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 400;
-}
+// Change font family for headings  
+$headings-font-family: 'Libre Baskerville', serif;;
 
-// Change font family for headings
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
-    }    
 
 // Change font sizes for h1-h6 using values in assignment
 
+$font-size-h1: 3.052rem;
+$font-size-h2: 2.441rem;
+$font-size-h3: 1.953rem;
+$font-size-h4: 1.563rem;
+$font-size-h5: 1.25rem;
+$font-size-h6: 1rem;
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Add additional custom code here
 
+
 // Target .navbar-brand and change font-family to use 'Libre Baskerville'.
+.navbar-brand {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+}
